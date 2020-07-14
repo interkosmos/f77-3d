@@ -5,8 +5,8 @@ program uses BIOS interrupts for input handling and video memory access.
 ![f77-3d](f773d.gif)
 
 ## Compilation
-Due to the limitations of ANSI FORTRAN 77 language standard, the program must be
-build with the (free) [Open Watcom FORTRAN 77](http://www.openwatcom.org/)
+Due to the limitations of the ANSI FORTRAN 77 language standard, the program
+must be build with the (free) [Open Watcom FORTRAN 77](http://www.openwatcom.org/)
 compiler and linked with the DOS/4G 32-bit DOS extender.
 
 Compile and run the executable with:
