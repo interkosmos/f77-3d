@@ -13,7 +13,7 @@ C
 *$pragma aux delay "*_" parm (value)
 C
 C     ******************************************************************
-      PROGRAM F3D
+      PROGRAM MAIN
       EXTERNAL RAYCST, ROTATE, SETPIX, SETMOD
       LOGICAL  GETCHR, MOVE
       CHARACTER*1 CHR
@@ -193,8 +193,8 @@ C
 C     ARGUMENTS:
 C
 C       X       -   THE COLUMN (0 ... 320).
-C       Y       -   THE ROW    (0 ... 24).
-C       C       -   THE COLOUR (0 ... 15).
+C       Y       -   THE ROW    (0 ... 200).
+C       C       -   THE COLOUR (0 ... 255).
 C
       INTEGER   SCRSZE
       PARAMETER (SCRSZE=320 * 200)
@@ -313,7 +313,7 @@ C
       REAL OLDX
 
       OLDX = X
-      X = X * COS(ANGLE) - Y * SIN(ANGLE)
+      X =    X * COS(ANGLE) - Y * SIN(ANGLE)
       Y = OLDX * SIN(ANGLE) + Y * COS(ANGLE)
       END
 C
